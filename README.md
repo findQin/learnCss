@@ -25,3 +25,28 @@ css_learn
     - 以弹性布局为主
     - 辅以媒体查询
 - 合理使用简写、CSS预处理器
+
+### 2. 背景与边框
+#### 1. 半透明边框
+- background-clip属性
+    - 默认按照元素的border box裁剪掉背景
+    - 参数值 border-box | padding-box | content-box
+#### 2. 多重边框
+- 方案1 - boxShadow方案
+    - boxShadow层层叠加，第一圈10px，第二圈需要5px时要设置15px
+    - 不影响布局、不受box-sizing影响
+    - “边框”出现在元素外圈，不影响鼠标点击
+- 方案2 - outline方案
+
+- 
+
+### X. 其他
+#### 1. margin折叠
+> 所有毗邻的两个或更多盒元素的margin将会合并为一个margin共享之;
+> 毗邻的定义为：同级或者嵌套的盒元素，并且它们之间没有非空内容、Padding或Border分隔;
+- 解决办法
+    - 1.在父层盒子添加：overflow：hidden (比较暴力，如果有悬浮窗可能导致无法看到)- 2.不用margin-top，改用padding-top （如果子盒子有border,那这个方法就不适合了）
+    - 3.给父元素添加1px的padding或者添加一个style不为none的border，可以使用透明border（如果设计师不能容忍1px的差异，那这个就不适用了）
+    - 4.给父元素加上浮动（如果要占满一行那就要加上width:100%）
+    - 5.设置父元素dispaly:inline-block或者display:table-cell;（如果要占满一行那就要加上width:100%）
+    - 6.给父元素添加绝对定位(不推荐)
