@@ -37,6 +37,19 @@ css_learn
     - 不影响布局、不受box-sizing影响
     - “边框”出现在元素外圈，不影响鼠标点击
 - 方案2 - outline方案
+#### 3. 灵活的背景定位
+- background属性
+    - background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+- background-postion
+    - background-postion允许在偏移量前面加指定关键字（background-position: right 20px bottom 10px）
+- background-origin
+    - background-origin允许设置对齐的模型位置
+    - border-box | padding-box | content-box （默认padding-box）
+#### 4. 边框内圆角
+- 实现效果：内层边框圆角、外层边框直角
+    - 内层使用border-radius、外层直角使用outline、中间使用box-shadow填充
+    - box-shadow: x-shadow y-shadow blur spread color inset;
+
 
 - 
 
