@@ -49,6 +49,11 @@ css_learn
 - 实现效果：内层边框圆角、外层边框直角
     - 内层使用border-radius、外层直角使用outline、中间使用box-shadow填充
     - box-shadow: x-shadow y-shadow blur spread color inset;
+#### 5. 条纹背景
+- linear-gradient设置上下两种颜色的色位相同，实现条纹背景的效果
+    - 使用background-size控制一次循环的大小
+    - 在方向存在一定角度时，并且需要控制循环大小时，使用repeating-linear-gradient
+    - 通过设置background颜色并配合background-image的方式可以减少直接颜色量的写入，方便修改代码
 
 
 - 
