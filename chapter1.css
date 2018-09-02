@@ -17,6 +17,12 @@ body {
     background: #eee;
     overflow: hidden;
 }
+.flex-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /* 1、透明边框 */
 #translucent > div {
     background: #aaa;
@@ -31,11 +37,6 @@ body {
 }
 
 /* 2、多重边框 */
-#multiborder > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 #multiborder > div > div:first-child {
     width: 30%;
     height: 2em;
@@ -69,3 +70,35 @@ body {
     box-shadow: 0 0 0 .5em #655;
     outline: 0.5em solid #655;
 }
+
+/* 5、条纹背景 */
+#stripedbackground > div > div {
+    width: 20%;
+    height: 4em;
+}
+#stripedbackground > div > div:first-child {
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-size: 100% 2em;
+}
+#stripedbackground > div > div:nth-child(2) {
+    /* 0 表示值等于前一个色标的位置 */
+    background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+} 
+#stripedbackground > div > div:nth-child(3) {
+    background: linear-gradient(45deg, #fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);
+} 
+#stripedbackground > div > div:nth-child(4) {
+    background: #58a;
+    background-image: repeating-linear-gradient(30deg,
+        hsla(0, 0%, 100%, .1),
+        hsla(0, 0%, 100%, .1) 1.5em,
+        transparent 0,
+        transparent 3em
+    );
+    background-image: repeating-linear-gradient(30deg,
+        #79b,
+        #79b 1.5em,
+        #58a 0,
+        #58a 3em
+    );
+} 
