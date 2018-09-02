@@ -102,3 +102,37 @@ body {
         #58a 3em
     );
 } 
+
+/* 6、复杂背景 */
+#complexbackground > div > div {
+    width: 20%;
+    height: 4em;
+}
+#complexbackground > div > div:first-child {
+    background: white;
+    background-image: linear-gradient(rgba(200, 0, 0, .5) 50%, transparent 0),
+                      linear-gradient(90deg, rgba(200, 0, 0, .5) 50%, transparent 0);
+    background-size: 1.5em 1.5em;
+}
+#complexbackground > div > div:nth-child(2) {
+    background: #58a;
+    background-image: linear-gradient(white 1px, transparent 0),
+                      linear-gradient(90deg, white 1px, transparent 0);
+    background-size: 1.5em 1.5em;
+}
+#complexbackground > div > div:nth-child(3) {
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0),
+                      radial-gradient(tan 30%, transparent 0);
+    background-size: 1em 1em;
+    background-position: 0 0, 0.5em 0.5em;
+}
+#complexbackground > div > div:nth-child(4) {
+    background: #fff;
+    background-image: linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 0),
+                      linear-gradient(45deg, #bbb 25%, transparent 0),
+                      linear-gradient(45deg, transparent 75%, #bbb 0);
+    background-size: 1em 1em;
+    background-position: 0 0, 0.5em 0.5em, 0.5em 0.5em, 1em 1em;
+}

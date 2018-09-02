@@ -54,6 +54,12 @@ css_learn
     - 使用background-size控制一次循环的大小
     - 在方向存在一定角度时，并且需要控制循环大小时，使用repeating-linear-gradient
     - 通过设置background颜色并配合background-image的方式可以减少直接颜色量的写入，方便修改代码
+#### 6. 复杂背景
+- linear-gradient并设置背景位置，实现复杂背景图构建
+    - 通过两条渐变配合垂直角度实现方格背景
+    - 设置较窄的宽度实现背景网格
+    - 通过radial-gradient实现原点背景
+    - 通过三角位移拼接实现棋盘式网格
 
 
 - 
