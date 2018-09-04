@@ -207,3 +207,31 @@ imageborder{
 #adaptivedeclipse > div > div:nth-child(3) {
     border-radius: 100% 0 0 0;
 } 
+
+/* 10. 平行四边形 */
+#parallelogram > div > div {
+    width: 40%;
+    height: 4em;
+    color: white;
+    text-align: center;
+    line-height: 4em;
+}
+#parallelogram > div > div:first-child {
+    transform: skewX(-45deg);
+    background: #58a;
+}
+#parallelogram > div > div:first-child > div {
+    transform: skewX(45deg);
+}
+#parallelogram > div > div:nth-child(2){
+    position: relative;
+    z-index: 0;
+}
+#parallelogram > div > div:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    background: #58a;
+    transform: skewX(-45deg);
+}
