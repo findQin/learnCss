@@ -148,3 +148,62 @@ body {
         linear-gradient(90deg, #665 4.1em, transparent 0);
     background-size: 41px 100%, 61px 100%, 8.3em 100%;
 }
+
+/* 8. 连续的图像边框 */
+#imageborderbackground > div > div {
+    width: 30%;
+    height: 2em;
+}
+imageborder{
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white),
+                url(stone-art.jpg);
+    background-size: cover;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+}
+#imageborderbackground > div > div:first-child {
+    padding: 0.5em;
+    border: 1em solid transparent;
+    background: 
+        linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(
+            -45deg, red 0, red 12.5%, 
+            transparent 0, transparent 25%,
+            #58a 0, #58a 37.5%,
+            transparent 0, transparent 50%
+        ) 0 / 5em 5em;
+}
+@keyframes ants { to {background-position: 100%}}
+#imageborderbackground > div > div:nth-child(2) {
+    padding: 1em;
+    border: 1px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg,
+            black 0, black 25%, white 0, white 50%
+        ) 0 / .6em .6em;
+    animation: ants 12s linear infinite;
+}
+
+/* 9. 自适应椭圆 */
+#adaptivedeclipse > div > div {
+    width: 25%;
+    height: 4em;
+    background: white;
+    border: #000 1px solid;
+}
+#adaptivedeclipse > div > div:first-child {
+    /* 可以通过/分割，分别设置水平/垂直方向的圆角信息 */
+    border-radius: 1em / 0.75em;
+    /* 根据矩形大小自适应的方法可以写成 */
+    /* border-radius: 50% / 50%;   */
+}
+#adaptivedeclipse > div > div:nth-child(2) {
+    /* 左上角开始顺时针、1和3同 2和4同 */
+    border-radius: 50% / 100% 100% 0 0;
+} 
+#adaptivedeclipse > div > div:nth-child(3) {
+    border-radius: 100% 0 0 0;
+} 
