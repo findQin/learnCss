@@ -236,7 +236,7 @@ imageborder{
     transform: skewX(-45deg);
 }
 
-/* 菱形图片 */
+/* 11. 菱形图片 */
 #diamondpic > div > div,
 #diamondpic > div > img {
     width: 4em;
@@ -253,4 +253,28 @@ imageborder{
 }
 #diamondpic > div > img:last-child {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+/* 12. 切角效果 */
+#cornercut > div > div {
+    width: 4em;
+    height: 4em;
+    background: #58a;
+}
+#cornercut > div > div:first-child {
+    background: 
+        linear-gradient(135deg, transparent 10px, #58a 0) top left,
+        linear-gradient(-135deg, transparent 10px, #58a 0) top right,
+        linear-gradient(45deg, transparent 10px, #58a 0) bottom left,
+        linear-gradient(-45deg, transparent 10px, #58a 0) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+#cornercut > div > div:nth-child(2) {
+    background: 
+        radial-gradient(circle at top left, transparent 10px, #58a 0) top left,
+        radial-gradient(circle at top right, transparent 10px, #58a 0) top right,
+        radial-gradient(circle at bottom left, transparent 10px, #58a 0) bottom left,
+        radial-gradient(circle at bottom right, transparent 10px, #58a 0) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
 }

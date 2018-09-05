@@ -80,6 +80,12 @@ css_learn
     - 通过外包一层div标签实现旋转45deg，图片反向旋转45deg保持正确方向
     - 使用clip-path进行裁剪，此方法兼容性略差
     - 注：两种方法出来大小略有区别，具体可以查看示例
+#### 12. 切角效果
+- background-size、clip-path
+    - 通过设置background为渐变色且设置其大小，得到相关切角效果
+    - 使用radial-gradient得到弧形切角效果
+    - 通过border-image配合svg实现切角效果
+    - 通过clip-path产生切角效果
 
 
 - 
