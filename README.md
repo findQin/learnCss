@@ -86,6 +86,10 @@ css_learn
     - 使用radial-gradient得到弧形切角效果
     - 通过border-image配合svg实现切角效果
     - 通过clip-path产生切角效果
+#### 13. 梯形标签页
+- 通过视觉误差产生梯形效果，个人不推荐
+    - 使用perspective配合rotateX实现梯形效果
+
 
 
 - 
