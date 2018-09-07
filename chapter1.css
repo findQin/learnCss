@@ -337,3 +337,18 @@ imageborder{
     animation-play-state: paused;
     animation-delay: -60s;
 }
+/* Chapter 4 */
+/* 14. 简单饼图 */
+#asideshadow > div > div {
+    width: 8em;
+    height: 4em;
+    background: yellowgreen;
+}
+#asideshadow > div > div:first-child {
+    box-shadow: 0 0.6em 0.4em -0.4em black;
+}
+#asideshadow > div > div:nth-child(2) {
+    box-shadow: 
+        0 0.6em 0.4em -0.4em black,
+        0 -0.6em 0.4em -0.4em black;
+}
