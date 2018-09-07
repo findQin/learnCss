@@ -23,6 +23,9 @@ body {
     justify-content: space-around;
 }
 
+/****/
+/* Chapter 2 背景与边框 */
+/****/
 /* 1、透明边框 */
 #translucent > div {
     background: #aaa;
@@ -187,6 +190,9 @@ imageborder{
     animation: ants 12s linear infinite;
 }
 
+/****/
+/* Chapter 3 形状 */
+/****/
 /* 9. 自适应椭圆 */
 #adaptivedeclipse > div > div {
     width: 25%;
@@ -337,7 +343,10 @@ imageborder{
     animation-play-state: paused;
     animation-delay: -60s;
 }
+
+/****/
 /* Chapter 4 */
+/****/
 /* 14. 简单饼图 */
 #asideshadow > div > div {
     width: 8em;

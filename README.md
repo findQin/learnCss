@@ -1,6 +1,8 @@
 css_learn
 
-### 1. 引言
+>
+> Chapter 1 引言
+>
 ##### CSS 编程技巧
 - 尽量减少代码重复
     - 1.减少改动时需要编辑的地方（固定px->跟随字体大小变动的rem、em）
@@ -26,7 +28,9 @@ css_learn
     - 辅以媒体查询
 - 合理使用简写、CSS预处理器
 
-### 2. 背景与边框
+>
+> Chapter 2 背景与边框
+>
 #### 1. 半透明边框
 - background-clip属性
     - 默认按照元素的border box裁剪掉背景
@@ -67,6 +71,10 @@ css_learn
 - border-image, linear-gradient设置白底padding-box叠加图片的border-box实现适应图片大小的图片边框
     - 信封边框实现
     - 蚂蚁线实现
+
+>
+> Chapter 3 形状
+>
 #### 9. 自适应椭圆
 - border-radius属性
     - border-radius属性值可以设置4个，其顺序是左上角开始顺时针旋转，可以缺省设置，效果是1和3相同、2和4相同
@@ -95,7 +103,9 @@ css_learn
     - 通过::before形成遮罩层半圆，旋转控制在0-180 (.5turn)度
     - 通过设置动画时间配合负动画延时实现停留在一个状态的饼图
 
+>
 > Chapter 4 视觉效果
+>
 #### 15. 单侧投影
 - 使用box-shadow的spread(扩张)属性为负来限制阴影范围
     - 阴影效果可以多个叠加
