@@ -114,6 +114,10 @@ css_learn
     - box-shadow: 2px 2px 10px rgba(0, 0, 0, .5)
     - ==>
     - filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5))
+#### 17. 染色效果
+- 使用background-blend-mode和背景色实现染色效果
+    - 设置背景色同时background-blend-mode为luminosity实现染色效果
+    - 通过双标签方式，设置外层标签背景色，同时设置内层标签mix-blend-mode为luminosity实现染色
 
 
 
