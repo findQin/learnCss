@@ -109,6 +109,11 @@ css_learn
 #### 15. 单侧投影
 - 使用box-shadow的spread(扩张)属性为负来限制阴影范围
     - 阴影效果可以多个叠加
+#### 16. 不规则投影
+- 使用filter代替box-shadow产生不贵则投影
+    - box-shadow: 2px 2px 10px rgba(0, 0, 0, .5)
+    - ==>
+    - filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .5))
 
 
 
