@@ -118,7 +118,8 @@ css_learn
 - 使用background-blend-mode和背景色实现染色效果
     - 设置背景色同时background-blend-mode为luminosity实现染色效果
     - 通过双标签方式，设置外层标签背景色，同时设置内层标签mix-blend-mode为luminosity实现染色
-
+#### 18. 毛玻璃效果
+- 使用filter配合相同背景实现毛玻璃模糊效果
 
 
 - 
