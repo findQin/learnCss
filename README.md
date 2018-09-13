@@ -120,6 +120,10 @@ css_learn
     - 通过双标签方式，设置外层标签背景色，同时设置内层标签mix-blend-mode为luminosity实现染色
 #### 18. 毛玻璃效果
 - 使用filter配合相同背景实现毛玻璃模糊效果
+#### 19. 折角效果
+- 通过设置多重linear-gradient实现折角效果
+    - 注意linear-gradient内部是径向距离，不同于background-size的水平垂直距离
+    - 非45度角的折角实现需要平移等操作
 
 
 - 
