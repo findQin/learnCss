@@ -124,6 +124,10 @@ css_learn
 - 通过设置多重linear-gradient实现折角效果
     - 注意linear-gradient内部是径向距离，不同于background-size的水平垂直距离
     - 非45度角的折角实现需要平移等操作
+### 20. 文本对齐
+- hyphens: manual | none | auto
+    - manual: 现有默认对齐方式
+    - auto: 采用合适的对齐方式
 
 
 - 

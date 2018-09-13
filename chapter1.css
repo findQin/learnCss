@@ -425,3 +425,17 @@ imageborder{
         linear-gradient(-135deg,
             transparent 1.42em, #58a 0);
 }
+/* 20.连字符断行 */
+#textalign > div > div {
+    width: 7.5em;
+    height: 6em;
+    background: white;
+}
+#textalign > div > div:nth-child(2) {
+    color: blue;
+    hyphens: none;
+}
+#textalign > div > div:nth-child(3) {
+    color: red;
+    hyphens: auto;
+}
