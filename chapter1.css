@@ -442,7 +442,6 @@ imageborder{
     color: red;
     hyphens: auto;
 }
-
 /* 21.插入换行 */
 #insertlinefeed > div > dl > dt,
 #insertlinefeed > div > dl > dd {
@@ -454,4 +453,12 @@ imageborder{
 }
 #insertlinefeed > div > dl > dd + dd::before {
     content: ", ";
+}
+/* 22. 文本行的斑马条纹 */
+#zebrastripes > div > div {
+    padding: .5em;
+    line-height: 1.5;
+    background: linear-gradient(#fff 50%, #ccc 0);
+    background-size: auto 3em;
+    background-origin: content-box;
 }
