@@ -425,6 +425,9 @@ imageborder{
         linear-gradient(-135deg,
             transparent 1.42em, #58a 0);
 }
+/****/
+/* Chapter 5 */
+/****/
 /* 20.连字符断行 */
 #textalign > div > div {
     width: 7.5em;
@@ -438,4 +441,17 @@ imageborder{
 #textalign > div > div:nth-child(3) {
     color: red;
     hyphens: auto;
+}
+
+/* 21.插入换行 */
+#insertlinefeed > div > dl > dt,
+#insertlinefeed > div > dl > dd {
+    display: inline;
+}
+#insertlinefeed > div > dl > dd + dt::before {
+    content: "\A";
+    white-space: pre;
+}
+#insertlinefeed > div > dl > dd + dd::before {
+    content: ", ";
 }
