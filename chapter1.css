@@ -467,3 +467,11 @@ imageborder{
     white-space: pre;
     tab-size: 8;
 }
+/* 24. 连字 */
+#ligature > div > p {
+    font-size: 30px;
+    font-variant-ligatures: 
+        common-ligatures
+        no-additional-ligatures
+        no-historical-ligatures;
+}

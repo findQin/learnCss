@@ -142,7 +142,8 @@ css_learn
     - 同时配置背景origin
 ### 23. 调整tab的宽度（code未实现）
 - 通过tab-size实现tab宽度调整
-
+### 24. 连字
+- 通过font-variant-ligatures设置连字，默认开启
 
 
 ### X. 其他
