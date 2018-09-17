@@ -462,3 +462,8 @@ imageborder{
     background-size: auto 3em;
     background-origin: content-box;
 }
+/* 23. 调整tab的宽度 */
+#tabsize > div > pre {
+    white-space: pre;
+    tab-size: 8;
+}

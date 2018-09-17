@@ -124,14 +124,13 @@ css_learn
 - 通过设置多重linear-gradient实现折角效果
     - 注意linear-gradient内部是径向距离，不同于background-size的水平垂直距离
     - 非45度角的折角实现需要平移等操作
-### 20. 文本对齐
-- hyphens: manual | none | auto
-    - manual: 现有默认对齐方式
-    - auto: 采用合适的对齐方式
-
 >
 > Chapter 5 字体排版
 >
+### 20. 文本对齐 （code未实现）
+- hyphens: manual | none | auto
+    - manual: 现有默认对齐方式
+    - auto: 采用合适的对齐方式
 ### 21. 插入换行
 - 通过设置dt和dd为行内元素，::before增加换行符，同时设置white-space使之生效
     - 在元素末尾/最前面插入"\A"即换行含义
@@ -141,9 +140,10 @@ css_learn
 - line-height配合background-size实现斑马条纹
     - 设置背景为渐变
     - 同时配置背景origin
+### 23. 调整tab的宽度（code未实现）
+- 通过tab-size实现tab宽度调整
 
 
-- 
 
 ### X. 其他
 #### 1. margin折叠
