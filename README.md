@@ -144,6 +144,8 @@ css_learn
 - 通过tab-size实现tab宽度调整
 ### 24. 连字
 - 通过font-variant-ligatures设置连字，默认开启
+### 25. 美化&字符 （code没有效果）
+- 通过设置多个字体，并限制先设置字体的unicode-range实现部分字符美化
 
 
 ### X. 其他

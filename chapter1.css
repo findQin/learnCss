@@ -475,3 +475,17 @@ imageborder{
         no-additional-ligatures
         no-historical-ligatures;
 }
+/* 25. 华丽的符号 */
+@font-face {
+    font-family: Ampersand;
+    src: local('Baskerville'),
+         local('Goudy Old Style'),
+         local('Palatino'),
+         local('Book Antiqua');
+    unicode-range: U+26;
+}
+#gorgeoussymbol > div > p {
+    background: #fff;
+    font-size: 30px;
+    font-family: Ampersand, Helveica, sans-serif;
+}
