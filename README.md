@@ -146,6 +146,8 @@ css_learn
 - 通过font-variant-ligatures设置连字，默认开启
 ### 25. 美化&字符 （code没有效果）
 - 通过设置多个字体，并限制先设置字体的unicode-range实现部分字符美化
+### 26. 自定义下划线
+- 通过设置background的条纹背景实现下划线效果
 
 
 ### X. 其他

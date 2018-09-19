@@ -489,3 +489,11 @@ imageborder{
     font-size: 30px;
     font-family: Ampersand, Helveica, sans-serif;
 }
+/* 26. 自定义下划线 */
+#underline > div > p {
+    font-size: 30px;
+    background: linear-gradient(gray, gray) no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 1.15em;
+    text-shadow: .05em 0 white, -.05em 0 white;
+}
