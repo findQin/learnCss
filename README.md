@@ -164,6 +164,10 @@ css_learn
 ### 29. 选用合适的鼠标光标
 - 设置cursor实现光标变化
     - not-allowed禁用、none不显示
+### 30. 扩大可点击区域
+- border: transparent + background-clip:padding-box   
+
+
 
 ### X. 其他
 #### 1. margin折叠
