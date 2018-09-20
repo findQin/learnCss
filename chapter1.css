@@ -550,3 +550,18 @@ imageborder{
 .circle path {
     fill: none;
 }
+/****/
+/* Chapter 6 */
+/****/
+/* 29. 选用合适的鼠标光标 */
+#cursor > div > div {
+    width: 6em;
+    height: 4em;
+    background: #58a;
+}
+#cursor .btn {
+    cursor: not-allowed;
+}
+#cursor .cursor-disable {
+    cursor: none;
+}

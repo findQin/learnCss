@@ -158,7 +158,12 @@ css_learn
 - 借助svg-path实现文本的环形显示
     - svg-path实现环状
     - textPath跟随svg形状实现环形文字
-
+>
+> Chapter 6 用户体验
+>
+### 29. 选用合适的鼠标光标
+- 设置cursor实现光标变化
+    - not-allowed禁用、none不显示
 
 ### X. 其他
 #### 1. margin折叠
