@@ -534,3 +534,19 @@ imageborder{
         0 5px hsl(0, 0%, 65%),
         0 5px 10px black;
 }
+/* 28. 环形文字 */
+#circletext > div > div {
+    width: 4em;
+    height: 4em;
+    font-size: 15px;
+}
+.circle {
+    margin: 0.5em auto 0;
+}
+.circle svg {
+    display: block;
+    overflow: visible;
+}
+.circle path {
+    fill: none;
+}

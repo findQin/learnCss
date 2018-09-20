@@ -154,6 +154,10 @@ css_learn
     - 空心字：使用多个text-shadow叠加产生效果
     - 发光字：浅色字+不指定颜色的text-shadow
     - 3D字：使用多层下阴影叠加效果
+### 28. 环形文字
+- 借助svg-path实现文本的环形显示
+    - svg-path实现环状
+    - textPath跟随svg形状实现环形文字
 
 
 ### X. 其他
