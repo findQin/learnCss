@@ -170,6 +170,26 @@ css_learn
 - 通过input[type="checkbox"]+label::before的方式通过伪元素模拟复选框
     - 默认情况下conten为\a0即不换行空格，选中情况下为\2713即✔️号
     - 通过阴影效果的变化来实现开关按钮的两种状态
+### 32. 通过阴影弱化背景
+- 多种不同实现方式
+    - 额外元素方案：增加额外元素用于遮挡背景
+    - 伪元素方案：设置body.dimmed::before实现(
+        1. 移植性不好，body::before可能已经占用，需要增加.dimmed
+        2. 设置before在对话框元素之前可以解决移植性问题，但无法对遮罩层Z轴进行细颗粒度控制
+        3. 伪元素无法绑定独立的JS事件处理
+    )
+    - box-shadow方案(
+        position: fixed;
+        boxshadow: 0 0 0 50vmax rgba(0,0,0,.8);
+        box-shadow不能捕获事件，防止与底层元素交互
+    )
+    - backdrop方案(
+        dialog::backdrop {
+            background: rgba(0,0,0,.8);
+        }
+        使用dialog标签配合原生的backdrop伪元素实现
+        浏览器对其的兼容性有限
+    )
 
 
 ### X. 其他
