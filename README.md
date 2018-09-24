@@ -166,7 +166,10 @@ css_learn
     - not-allowed禁用、none不显示
 ### 30. 扩大可点击区域
 - border: transparent + background-clip:padding-box   
-
+### 31. 自定义复选框
+- 通过input[type="checkbox"]+label::before的方式通过伪元素模拟复选框
+    - 默认情况下conten为\a0即不换行空格，选中情况下为\2713即✔️号
+    - 通过阴影效果的变化来实现开关按钮的两种状态
 
 
 ### X. 其他
