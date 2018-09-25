@@ -619,3 +619,24 @@ imageborder{
     position: absolute;
     clip: rect(0,0,0,0);
 }
+/* 33. 通过模糊来弱化背景 */
+#backgroundblur {
+    position: relative;
+}
+#backgroundblur > div > div:first-child {
+    width: 100%;
+    height: 100%;
+    filter: blur(.2em);
+}
+#backgroundblur > div > div:nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 6em;
+    height: 4em;
+    background: white;
+    border-radius: .8em;
+    text-align: center;
+    line-height: 4;
+    box-shadow: .1em .1em .1em .1em #777;
+}
