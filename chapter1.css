@@ -640,3 +640,14 @@ imageborder{
     line-height: 4;
     box-shadow: .1em .1em .1em .1em #777;
 }
+/* 34. 滚动提示 */
+#scrolltips > div {
+    overflow: scroll;
+    text-align: center;
+    background: 
+    linear-gradient(white 30%, transparent),
+    radial-gradient(at 50% 0, rgba(0,0,0,.2), transparent 70%);
+    background-repeat: no-repeat;
+    background-size: 100% 1em, 100% .3em;
+    background-attachment: local, scroll;
+}
