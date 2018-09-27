@@ -681,3 +681,17 @@ imageborder{
     height: 8em;
     display: block;
 }
+/* 36. 自适应内部元素 */
+#autoinblock > div {
+    height: 16em;
+}
+#autoinblock figure {
+    max-width: 4em;
+    max-width: min-content;
+    margin: auto;
+    border: 1px solid black;
+}
+#autoinblock img {
+    width: 6em;
+    height: 6em;
+}

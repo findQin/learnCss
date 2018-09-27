@@ -201,6 +201,9 @@ css_learn
     - 设置resize:horizontal实现横向拉伸
     - 设置max-width方式图片过度拉伸
     - 通过增加伪元素的方式增强交互体验
+### 36. 自适应内部元素
+- max-width: min-content
+    - 根据内容大小自动调整元素宽度
 
 
 ### X. 其他
