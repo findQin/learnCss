@@ -204,6 +204,9 @@ css_learn
 ### 36. 自适应内部元素
 - max-width: min-content
     - 根据内容大小自动调整元素宽度
+### 37. 精确控制表格列宽
+- table-layout:fixed实现表格列宽的调整
+
 
 
 ### X. 其他
