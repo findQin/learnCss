@@ -700,3 +700,15 @@ imageborder{
     table-layout: fixed;
     width: 100%;
 }
+/* 38.根据兄弟的数量来设置样式 */
+#stylesibling > div > div {
+    width: 3em;
+    height: 3em;
+    background: #fff;
+}
+#stylesibling > div > div:first-child:nth-last-child(n + 4) {
+    background: #58a;
+}
+#stylesibling > div > div:first-child:nth-last-child(n + 4) ~ div {
+    background: pink;
+}

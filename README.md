@@ -206,6 +206,12 @@ css_learn
     - 根据内容大小自动调整元素宽度
 ### 37. 精确控制表格列宽
 - table-layout:fixed实现表格列宽的调整
+### 38. 根据兄弟元素的数量来设置样式
+- li:first-child:nth-last-child(4)
+    - li:first-child:nth-last-child(4)选择总数为4的list首个li
+    - li:first-child:nth-last-child(4)~li选择除了首个外剩余li
+    - li:first-child:nth-last-child(4)选择了总是为n+4的list首个li（5、6、7...）
+    - li:first-child:nth-last-child(n+4)~li选择剩余的li
 
 
 
