@@ -212,7 +212,24 @@ css_learn
     - li:first-child:nth-last-child(4)~li选择除了首个外剩余li
     - li:first-child:nth-last-child(4)选择了总是为n+4的list首个li（5、6、7...）
     - li:first-child:nth-last-child(n+4)~li选择剩余的li
-
+### 39. 满幅背景，定宽的内容
+- 使用calc实现定宽居中，代替多余标签
+```
+<footer>
+    <div class="wrapper"> <!--脚本内容--> </div>
+</footer>
+footer { background: #333;}
+.wrapper {
+    max-width: 900px;
+    margin: 1em auto;
+}
+//-----------------
+footer {
+    padding: 1em;
+    padding: 1em calc(50% - 450px);
+    background: #333;
+}
+```
 
 
 ### X. 其他
