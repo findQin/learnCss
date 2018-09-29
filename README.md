@@ -230,6 +230,35 @@ footer {
     background: #333;
 }
 ```
+### 40. 垂直居中
+- 基于绝对定位的方案
+```
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+- 基于视口单位的方案
+```
+main {
+    width: 18em;
+    padding: 1em 1.5em;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+}
+```
+- 基于flex的解决方案
+```
+main {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    width: 18em;
+    height: 10em;
+}
+```
 
 
 ### X. 其他
