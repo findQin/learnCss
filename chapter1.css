@@ -712,3 +712,12 @@ imageborder{
 #stylesibling > div > div:first-child:nth-last-child(n + 4) ~ div {
     background: pink;
 }
+/* 41. 紧贴底部的脚本*/
+#bottomfooter > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bottomfooter > div > main {
+    flex: 1;
+}

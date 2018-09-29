@@ -259,6 +259,14 @@ main {
     height: 10em;
 }
 ```
+### 41. 紧贴底部的脚本
+- 固定高度解决方案
+```
+#wrapper {
+    min-height: calc(100vh - 7em)
+}
+```
+- flex:1方案
 
 
 ### X. 其他
