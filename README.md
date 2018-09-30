@@ -267,6 +267,10 @@ main {
 }
 ```
 - flex:1方案
+### 42. 缓动效果
+- 通过设置动画曲线来实现
+    - 设置ease-in ease-out
+    - 设置赛贝尔曲线cubic-bezier
 
 
 ### X. 其他

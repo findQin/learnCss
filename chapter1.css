@@ -721,3 +721,23 @@ imageborder{
 #bottomfooter > div > main {
     flex: 1;
 }
+/* 42. 缓动效果 */
+#bounce > div {
+    height: 20em;
+    align-items: flex-start;
+}
+@keyframes k-bounce {
+    60%, 80%, to {
+        transform: translateY(8em);
+        animation-timing-function: ease;
+    }
+    70% { translateY(6em);}
+    90% { translateY(7.2em);}
+}
+#bounce > div > div {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: #58a;
+    animation: k-bounce 3s cubic-bezier(.1, .25, 1, .25);
+}
