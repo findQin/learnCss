@@ -272,6 +272,19 @@ main {
     - 设置ease-in ease-out
     - 设置赛贝尔曲线cubic-bezier
 
+### 43. 逐帧动画
+- 通过step调速函数实现跳跃变化
+    - 使用拼接将图片拼成一张图片
+```
+@keyframe loader {
+    to {background-position: -800px 0;}
+}
+.loader {
+    width: 100px; height: 100px;
+    background: url(img/loader.png) 0 0;
+    animation: loader 1s infinite steps(8);
+}
+```
 
 ### X. 其他
 #### 1. margin折叠
