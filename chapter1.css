@@ -731,8 +731,8 @@ imageborder{
         transform: translateY(8em);
         animation-timing-function: ease;
     }
-    70% { translateY(6em);}
-    90% { translateY(7.2em);}
+    70% { transform: translateY(6em);}
+    90% { transform: translateY(7.2em);}
 }
 #bounce > div > div {
     width: 2em;
@@ -740,4 +740,15 @@ imageborder{
     border-radius: 50%;
     background: #58a;
     animation: k-bounce 3s cubic-bezier(.1, .25, 1, .25);
+}
+/* 43. 闪烁效果 */
+@keyframes blink-smooth {
+    to { color: transparent}
+}
+@keyframes blink2 {
+    50% { color: transparent}
+}
+#highlight > div > p {
+    /*animation: blink-smooth .5s 6 alternate;*/
+    animation: blink2 1s 3 steps(1);
 }

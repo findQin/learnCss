@@ -285,6 +285,11 @@ main {
     animation: loader 1s infinite steps(8);
 }
 ```
+### 44. 闪烁效果
+- 实现文字闪烁效果
+    - 通过动画to transparent实现文字从黑色渐变到透明
+    - 通过alternate反转偶数帧实现平滑变化
+    - 通过步进函数配合keyframes 50%实现闪烁跳动
 
 ### X. 其他
 #### 1. margin折叠
