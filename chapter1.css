@@ -752,3 +752,18 @@ imageborder{
     /*animation: blink-smooth .5s 6 alternate;*/
     animation: blink2 1s 3 steps(1);
 }
+/* 45. 打字效果 */
+@keyframes typing {
+    from { width: 0;}
+}
+@keyframes caret {
+    50% { border-color: transparent;}
+}
+#typing > div > p {
+    width: 7.5em;
+    border-right: .05em solid;
+    animation: typing 8s steps(14),
+        caret 1s steps(1) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}

@@ -290,6 +290,10 @@ main {
     - 通过动画to transparent实现文字从黑色渐变到透明
     - 通过alternate反转偶数帧实现平滑变化
     - 通过步进函数配合keyframes 50%实现闪烁跳动
+### 45. 打字动画
+- 通过设置文本宽度加上步进动画实现
+    - 设置文本white-space:nowrap; overflow:hidden;
+    - 设置有边框实现光标效果
 
 ### X. 其他
 #### 1. margin折叠
