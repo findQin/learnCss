@@ -294,6 +294,10 @@ main {
 - 通过设置文本宽度加上步进动画实现
     - 设置文本white-space:nowrap; overflow:hidden;
     - 设置有边框实现光标效果
+### 46. 状态平滑的动画
+- 通过控制animation-play-state来控制动画的进程
+    - 通过paused使动画暂停
+    - 通过running使动画继续播放
 
 ### X. 其他
 #### 1. margin折叠

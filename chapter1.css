@@ -767,3 +767,18 @@ imageborder{
     white-space: nowrap;
     overflow: hidden;
 }
+/* 46. 状态平滑的动画 */
+@keyframes panoramic {
+    to { background-position: 100% 0}
+}
+#animations > div > div {
+    width: 6em; height: 8em;
+    background: url('./pic/bg.jpg');
+    background-size: auto 100%;
+    animation: panoramic 3s linear infinite alternate;
+    animation-play-state: paused;
+}
+#animations > div > div:hover,
+#animations > div > div:focus {
+    animation-play-state: running;
+}
