@@ -298,6 +298,9 @@ main {
 - 通过控制animation-play-state来控制动画的进程
     - 通过paused使动画暂停
     - 通过running使动画继续播放
+### 47. 环形路线平移动画
+- 通过设置双层动画实现头像不跟随转动而产生旋转
+    - 可以将内层代码设置animation-direction为reverse来使代码DRY
 
 ### X. 其他
 #### 1. margin折叠
